@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FNAF Reimagined | Minecraft Adventure Map</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='FNAF.css'> 
+    <link rel="icon" type="image/png" sizes="32x32" href="images/FNAF_favicon.png"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+   <header>
+   <h1><img src="images/FNAF_logo.png" alt="FNAF reimagined logo"></h1>
+   </header>
+   
+   <nav class="local">
+    <a href="index.html">Check Out Other Maps</a> <a class="divider">|</a>
+    <a href="https://www.planetminecraft.com/member/fishtacotrump/">Planet Minecraft Page</a>
+   </nav>
+
+   <main>
+   <section>
+
+        <h2 id="gallery">Gallery</h2>
+
+        <div class="carousel">
+            <img id="carousel-image" src="images/FNAF_reimagined_home.jpg" alt="Gallery image">
+            <button onclick="prevImage()">←</button>
+            <button onclick="nextImage()">→</button>
+        </div>
+
+        <script>
+            const images = ["images/FNAF_reimagined_home.jpg", "images/FNAF_office.png", "images/FNAF_stage.png", "images/FNAF_pirates_cove.png", "images/FNAF_music_box.png", "images/FNAF_electrical_room.png", "images/bite_of_87.png", "images/FNAF_map.jpg"];
+                let index = 0;
+
+                function showImage() {
+                document.getElementById("carousel-image").src = images[index];
+                }
+
+                function nextImage() {
+                index = (index + 1) % images.length;
+                showImage();
+                }
+
+                function prevImage() {
+                index = (index - 1 + images.length) % images.length;
+                showImage();
+            }
+        </script>
+
+        <h2>Download the Map</h2>
+            <a href="media/FNAF Reimagined.zip" download="FNAF Reimagined.zip"><p class="zip"><img src="images/zip_file.png"> FNAF Reimagined Download ⇩</p></a>
+
+        <h2>About the Map</h2>
+        <p>
+            Five Nights at Freddy's Reimagined is a take on the original game with new and unique mechanics inside of Minecraft. 
+            It comes with jump scares, cutscenes, 6 animatronics, and 7 different nights to beat with varying difficulty, along 
+            with a custom AI mode to custom-make your own challenge. Can you survive all the nights?
+        </p>
+
+        <h2>How To Play</h2>
+
+    <div class="info-box">
+        <h3>Drowned, Zombie, Husk (Bonnie, Freddy, Chica)</h3>
+        <p>
+            These three will slowly work down the main stage to their designated halls (left, middle, right, respectively) 
+            until they reach your door. When they do close the door and they will return to the main stage after some time. 
+            If they wait at your door too long, they will jumpscare you.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>The Bogged (Golden Freddy)</h3>
+        <p>
+            Golden Freddy will occasionally show up on one of four cameras (left hall, right hall, pirate's cove, music box). 
+            When he shows up, he will disable the lights in the pizzeria and make your hallway lights unusable. After finding 
+            him on the cameras, go into the electrical room and select which camera he was on and reset the breaker. If you 
+            reset the wrong breaker while he is active, you will be jumpscared. However, Golden Freddy can stay active forever 
+            and will not jumpscare you based on any timer.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Enderman (Shadow Freddy)</h3>
+        <p>
+            Shadow Freddy will randomly show up in the office after being on the cameras for extended periods. When he shows up, 
+            quickly go back into any camera and he will disappear. The longer you are on a camera, the more likely he will show up. 
+            If you take too long to go back onto a camera while he is in your office, you will be jumpscared.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Music Box</h3>
+        <p>
+            On the music box camera, you will see a music box that you can interact with. Right-click on the arrow in the middle 
+            of the box to spin the arrow and wind the music box. Its wind-up progress is displayed with a red bar above the music 
+            box. If it fully depletes, you will be jumpscared.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Power</h3>
+        <p>
+            Your power is displayed behind you with a yellow bar. Using the doors and lights (NOT cameras) will consume power. If 
+            your power is fully drained, you will not immediately lose, but you will be unable to use your doors, lights, and cameras, 
+            and will most likely be jumpscared like in the original game.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Cameras</h3>
+        <p>
+            The cameras can be accessed using the buttons behind you and correlate to each of the rooms labeled in the map. Once viewing 
+            a camera, crouch to return to the office.
+        </p>
+    </div>
+
+        <h2>Settings</h2>
+
+        <div class="settings">
+            <div class="column">
+            <h3>Required</h3>
+            <ol>
+                <li>Simulation distance 32 chunks.</li>
+                <li>Version 1.21.1.</li>
+            </ol>
+            </div>
+
+            <div class="column">
+            <h3>Recommended</h3>
+            <ol>
+                <li>Lighting default.</li>
+                <li>Music Off.</li>
+                <li>Headphones.</li>
+            </ol>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; FNAF Reimagined 2025</p>
+        <p>Contact: <a href="mailto:wolfie.essink@gmail.com">wolfie.essink@gmail.com</a> with any feedback or bug reports!</p>
+    </footer>
+
+</body>
+</html>

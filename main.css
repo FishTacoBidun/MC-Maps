@@ -1,0 +1,171 @@
+body {
+  background-attachment: fixed;
+  background-image:url(images/MC_background.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:gray;
+  font-family: "Jersey 10", sans-serif;
+  margin:0 auto;
+  padding:2%;
+  max-width:940px;
+  align-items:center;
+  text-align:center;
+  color:rgb(255, 255, 255);
+}
+
+header img {
+  max-width: 90%;
+}
+
+main {
+  background-color:rgb(99, 99, 99);
+  padding-top:1%;
+  padding-bottom:2%;
+  border-left:20px solid rgb(50, 51, 50);
+  border-right:20px solid rgb(50, 51, 50);
+  border-bottom:20px solid rgb(50, 51, 50);
+  margin:0 auto;
+  max-width:900px;
+  }
+
+h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  margin-top: 60px;
+}
+
+h3 {
+  font-size: 35px;
+  margin-top: 15px;
+  margin-bottom:0;
+}
+
+p {
+  font-family:"Pixelify Sans", sans-serif;
+  padding-left:3%;
+  padding-right:3%;
+  font-size: 20px;
+}
+
+p img {
+  max-width:30%;
+  display:block;
+  margin:0 auto;
+}
+
+.zip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: rgb(50, 51, 50);
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 3%;
+  padding-right: 3%;
+}
+
+.zip img {
+  margin-left:40px;
+}
+
+.zip p {
+  padding-left:2%;
+}
+
+.zip:hover {
+  background-color:rgb(65, 134, 33);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.map-box {
+    background-color: rgb(50, 51, 50);
+    padding: 2%px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    transition: transform 0.2s ease;
+}
+
+.map-box:hover {
+    transform: scale(1.01);
+    background-color:rgb(65, 134, 33);
+}
+
+a#maps img {
+  max-width:80%;
+}
+
+a p {
+  padding-bottom: 20px;
+}
+
+a h2 {
+  padding-top: 15px;
+}
+
+.local {
+  text-decoration: none;
+  font-size:60px;
+  background-color:rgb(50, 51, 50);
+  border-left:20px solid rgb(50, 51, 50);
+  border-right:20px solid rgb(50, 51, 50);
+  padding:10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin:0 auto;
+  max-width:900px;
+}
+
+nav.local img {
+  max-width:7%;
+  vertical-align: middle;
+}
+
+nav a:hover {
+  background-color:rgb(65, 134, 33);
+  padding-left:2%;
+  padding-right:2%;
+}
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2% 3%;
+  text-align: center;
+}
+
+.about-text {
+  flex: 1 1 20%;
+}
+
+.zip-link {
+  flex: 1 1 35%;
+  text-align: right;
+}
+
+.zip {
+  margin: 0;
+}
+
+#about h3 {
+  margin-bottom:0;
+}
+
+#about p {
+  margin-top:0;
+}
+
+footer p {
+  font-family: "Jersey 10", sans-serif;
+  padding:none;
+}
