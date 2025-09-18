@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FNAF Reimagined | Minecraft Adventure Map</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='FNAF_Co-op.css'> 
+    <link rel="icon" type="image/png" sizes="32x32" href="images/GFfavicon.png"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+   <header>
+   <h1><img src="images/FNAFCo-opHeader.png" alt="FNAF Co-op logo"></h1>
+   </header>
+   
+   <nav class="local">
+    <a href="index.html">Check Out Other Maps</a> <a class="divider">|</a>
+    <a href="https://www.planetminecraft.com/member/fishtacotrump/">Planet Minecraft Page</a>
+   </nav>
+
+   <main>
+   <section>
+
+        <h2 id="gallery">Gallery</h2>
+
+        <div class="carousel">
+            <img id="carousel-image" src="images/FNAFCo-opLogo.png" alt="Gallery image">
+            <button onclick="prevImage()">←</button>
+            <button onclick="nextImage()">→</button>
+        </div>
+
+        <script>
+            const images = ["images/FNAFCo-opLogo.png", "images/Player1.png","images/P1-I2.png","images/P1-I3.png","images/P1-I4.png","images/Player2.png","images/P2-I2.png","images/P2-I3.png","images/P2-I4.png","images/BehindTheScences.png","images/BehindTheScenes2.png"];
+                let index = 0;
+
+                function showImage() {
+                document.getElementById("carousel-image").src = images[index];
+                }
+
+                function nextImage() {
+                index = (index + 1) % images.length;
+                showImage();
+                }
+
+                function prevImage() {
+                index = (index - 1 + images.length) % images.length;
+                showImage();
+            }
+        </script>
+
+        <h2>Download the Map</h2>
+            <a href="media/FNAF Co-op.zip" download="FNAF Co-op.zip"><p class="zip"><img src="images/zip_file.png"> FNAF Co-op Download ⇩</p></a>
+
+        <h2>About the Map</h2>
+        <p>
+            <strong>Overview: </strong>Five Nights at Freddy’s Co-op is a unique take on a FNAF fan game where you must communicate and work together with another player to beat the nights and make it to 6am. 
+            It comes with jump scares, cutscenes, special mechanics, 9 animatronics to face, and 7 nights with varying difficulty and unique challenges. This game was designed 
+            to focus on technical and fun gameplay, similar to Ultimate Custom Night, and does not have a story or lore. 
+        </p>
+        <p>
+            <strong>What To Expect: </strong>Nights 1 - 4 are designed to steadily increase in difficulty while not being too challenging to help you learn the game. After this, each night will add an additional new mechanic that you and your teammate must 
+            learn and deal with, making the nights quickly ramp in difficulty. If you manage to beat the 2 hardest nights, you are awarded with special animated cutscenes, while 
+            completing every night unlocks a special extras menu. Can you beat all the nights?
+        </p>
+        <p>
+            <strong>Important Note:</strong> When one player gets jumpscared and loses, it does not mean you’ve failed the night, and instead, both player 1 and 2 must be jumpscared for it to count as 
+             a loss. The rules below for how to play are separated by which animatronics kill each player.
+        </p>
+
+        <h2>Player 1 - How To Play</h2>
+
+    <div class="info-box">
+        <h3>Bonnie and Chica (Drowned and Husk)</h3>
+        <p>
+            Bonnie and Chica will only be visible to player 2 on the left and right stages, respectively. While player 2 is standing in front of either of their stages, keeping the 
+            curtain open, they will not progress towards the office. Once they fully progress and leave their stages, this means they are outside your office door, around the corner, 
+            where you can’t see them. The only way to make them return to their stages is for player 2 to use the audio lure, which causes them to return to their stages if they are not 
+            currently there; however, it has a cooldown. To combat this, you can use the left door for Bonnie and the right door for Chica to prevent them from killing you. If Bonnie or 
+            Chica waits outside your office door for too long while their door is up, you will die. You can also use the door to stall one of the animatronics until both of them are at 
+            your door, causing the audio lure to return both of them to their stages at once. While using the doors, you generate heat.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Heat</h3>
+        <p>
+            Heat is generated by using the doors or keeping the light on, Foxy. The doors generate significantly more heat than the light in Foxy’s room. If there are no active sources 
+            generating heat, it will gradually deteriorate and cool off. If you let the meter charge fully, it will cause the heaters to reset, leading to a period in which the doors and 
+            light become unusable.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Cameras</h3>
+        <p>
+            The cameras can be accessed using their respective buttons behind you. While on a camera, you can crouch to return back to your office. Using cameras does NOT generate any heat.
+        </p>
+    </div>
+
+     <div class="info-box">
+        <h3>Creaking (Withered Freddy)</h3>
+        <p>
+            Withered Freddy will appear in your middle hallway and slowly work his way towards your office. Once he is at the entrance to your office, you must go into the back room. If 
+            you take too long, you will die. While in the back room, you must wait until you hear Withered Freddy knock on the door, which means it is safe to return.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Baby Zombie (Freddle)</h3>
+        <p>
+            Freddle will work his way through the vent, which you can see on the prize corner camera. Once he has made his way through the whole vent, he will be at the vent opening on the 
+            ceiling of your office. You can tell he is there by a constant loud metal banging noise. Once he has made it to this vent opening, you must go on to the cameras. If you take too 
+            long, you will die. While on any of the cameras, you must wait until you hear Freddle pound on the vent and break something, which means it is safe to return.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Skeleton (Endoskeleton)</h3>
+        <p>
+            In the Endoskeleton Control camera, you will occasionally see the light to your left flashing, indicating the Endoskeleton is active. When this happens, you must alert player 2, 
+            as they are the only one who can see what mask the endoskeleton put on. To do this, player 2 must go into the Parts & Service room and press the button by the window. This will 
+            temporarily show the Endoskeleton and what mask he has on. Player 2 must then report this to you so you can input the correct option on the terminal in the Endoskeleton Control 
+            camera and confirm it, causing the Endoskeleton to deactivate. Taking too long to deactivate the Endoskeleton or choosing the wrong mask option while the Endoskeleton is active 
+            will cause you to die. 
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Music Box</h3>
+        <p>
+            On the Music Box camera, there is a music box that must be kept wound by spinning the golden arrow in the middle of it. Letting the music box fully unwind will cause you to die. 
+            This music box unwinds faster than player 2’s; however, it also charges up faster.
+        </p>
+    </div>
+
+    <h2>Player 2 - How To Play</h2>
+
+    <div class="info-box">
+        <h3>Bogged (Golden Freddy)</h3>
+        <p>
+            Golden Freddy will occasionally be hiding in one of the 4 storage rooms located in Parts & Service, the Music Room, and the Left and Right Party Rooms. It is player 1’s job 
+            to alert you when it is hiding and which room it is hiding in, using the motion detection panel to their left in the Electrical camera. Once you enter the storage room 
+            where Golden Freddy is hiding in, you must wait until you hear three sets of footsteps. This means that Golden Freddy is directly in front of you, where you then have to 
+            crouch to use your flashlight to scare him away, but be careful, as the flashlight has a cooldown. Waiting too long to enter the room where he is hiding or letting him stand 
+            directly in front of you for too long will cause you to die.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Wither Skeleton (Foxy)</h3>
+        <p>
+            Foxy can only be viewed in the back room in Player 1’s office. Keeping the light on Foxy will prevent him from progressing. Once Foxy has fully progressed and left Pirate’s Cove, 
+            player 1 must alert you. You then need to go into the safe room and close the door. This will cause Foxy to enter the pizzeria. Opening the door once Foxy has entered the 
+            pizzeria or taking too long to secure yourself in the safe room while Foxy has left Pirate’s Cove will cause you to die. You know it is safe to open the door and leave the 
+            safe room once you hear Foxy pound on the door three times. It is important for player 1 to stall Foxy with the light for as long as possible, as Foxy will wait in the pizzeria 
+            for a considerable amount of time before leaving, where you are stuck in the safe room, unable to perform any other tasks. The safe room door does NOT generate heat.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Dark Room (Shadow Freddy)</h3>
+        <p>
+            There will always be one room in the pizzeria with the lights off. Shadow Freddy is lurking in this room, and if you enter, you will die. It is your job to communicate to player 
+            1 when you need this room changed, as they are the one with access to the light panel in the Electrical camera. The Prize Corner will always be the dark room at the start of the 
+            night.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Enderman (Shadow Bonnie)</h3>
+        <p>
+            Shadow Bonnie will randomly show up in one of the six main rooms in the pizzeria. This does not include the storage rooms. When he shows up, you will be alerted by the elder 
+            guardian curse effect popping up on your screen. To stop Shadow Bonnie, you must find which room he is hiding in and hit him, causing him to leave. If Shadow Bonnie is left in 
+            a room for too long, you will NOT die, but instead be unable to move for 13 seconds.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>Music Box</h3>
+        <p>
+            In the prize corner, there is a music box that must be kept wound by spinning the golden arrow in the middle of it. Letting the music box fully unwind will cause you to die. 
+            This music box unwinds slower than player 1’s; however, it also takes longer to charge up.
+        </p>
+    </div>
+
+        <h2>Settings</h2>
+
+        <div class="settings">
+            <div class="column">
+            <h3>Required</h3>
+            <ol>
+                <li>Simulation distance 32 chunks.</li>
+                <li>Version 1.21.8.</li>
+            </ol>
+            </div>
+
+            <div class="column">
+            <h3>Recommended</h3>
+            <ol>
+                <li>Lighting default.</li>
+                <li>Music Off.</li>
+                <li>Headphones.</li>
+            </ol>
+            </div>
+        </div>
+
+<input type="checkbox" id="toggle">
+            <label for="toggle" class="dropdown dropdown-label" id="help">Reveal Night 5, 6, and 7 Unqiue Mechanics</label>
+
+            <div class="dropdown-content">
+                <div class="dropdown-columns">
+                    <div class="dropdown-column">
+                        <h3>Night 5</h3>
+                        <p class="dropdown-text">If the heat meter gets fully charged it will never go back down, causing the doors and light to become unusable.</p>
+                    </div>
+                    <div class="dropdown-column">
+                        <h3>Night 6</h3>
+                        <p class="dropdown-text">Every light in the pizzeria is visibly turned off; however, only one contains Shadow Freddy and will kill you like in the previous nights. 
+                            This is controlled the same as usual.</p>
+                    </div>
+                    <div class="dropdown-column">
+                        <h3>Night 7</h3>
+                        <p class="dropdown-text">The night goes to 8am instead of 6am.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p></p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; FNAF Co-op 2025</p>
+        <p>Contact: <a href="mailto:wolfie.essink@gmail.com">wolfie.essink@gmail.com</a> with any feedback or bug reports!</p>
+    </footer>
+
+</body>
+</html>
